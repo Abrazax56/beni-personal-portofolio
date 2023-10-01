@@ -15,8 +15,21 @@ function reveal() {
         }
       }
     }
+function bungkusTex() {
 
+        const bungkus = document.querySelectorAll('.bungkus_tex2');
+        for (let i = 0; i < bungkus.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = bungkus[i].getBoundingClientRect().top;
+        const elementVisible = 80;
+
+        if (elementTop < windowHeight - elementVisible) {
+          bungkus[i].classList.add("aktive");
+        }
+      }
+    }
 window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", bungkusTex);
 pp.style.transition = '2s';
 pp.style.cursor = 'pointer';
 slide.style.transition = '1s';
