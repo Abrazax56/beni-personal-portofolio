@@ -114,6 +114,21 @@ nav {
   justify-content: center;
   align-items: flex-end;
 }
+.bungkus_tex2 {
+  margin-top: 3.5rem;
+  background-image: linear-gradient(90deg, rgba(80, 90, 120, 1), transparent);
+  transform: rotate(-2deg) translateY(25rem);
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 1s transform ease;
+}
+.bungkus_tex2.aktive {
+  transform: rotate(-2deg) translateY(0);
+  opacity: 1;
+  }
 .title_aboutme {
   font-size: 3rem;
   color: rgba(210, 230, 255, 1);
